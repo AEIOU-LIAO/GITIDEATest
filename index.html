@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>我的第一个网页游戏</title>
+</head>
+<body style="text-align:center;padding:60px;font-family:Arial">
+  <h1>🎮 我的第一个网页游戏</h1>
+  <h2>得分：<span id="score">0</span></h2>
+  <button onclick="addScore()" style="padding:15px 30px">
+    点击得分 +1
+  </button>
+  <script>
+    let score = 0;
+    function addScore() {
+      document.getElementById('score').textContent = ++score;
+    }
+  </script>
+</body>
+</html>
